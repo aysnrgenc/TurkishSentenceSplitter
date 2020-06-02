@@ -1,15 +1,15 @@
 # TurkishSentenceSplitter
 Sentence splitting for Turkish language
 
-##Setup
+# #Setup
 Please clone or download project into your local
 
-##Compile
+# #Compile
 cd src
 javac com/NLP/TurkishSentenceSplitter 
 
-##Data
+# #Data
 You can find sample text for input and splitted version under /data directory
 
-##Run
+# #Run
 java com/NLP/TurkishSentenceSplitter ../data/sample_text.txt ../data/splitted_text.txt
