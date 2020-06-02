@@ -9,17 +9,20 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class splitter {
+public class TurkishSentenceSplitter {
 	   
-    static String str; 
+   static String str; 
 
    public static void main(String []args) throws Exception{
+	   //Read arguments
+	   String inputFile = args[0]; 
+	   String outputFile = args[1]; 
 	   
-	   //Create empty file
-	   PrintWriter writer = new PrintWriter("sentences.txt", "UTF-8");
+	   //Create output file
+	   PrintWriter writer = new PrintWriter(outputFile);
 	   
-	   //Read text.txt file
-	   str = readFile("text.txt");
+	   //Read input file
+	   str = readFile(inputFile);
 	   
 	   //Regex for quotation mark
 	   findReplaceDOT("\"(\\.|[^\"])*\"");
